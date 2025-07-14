@@ -12,15 +12,15 @@ public enum OperatorType {
         }
         return firstnum / secondnum;
     });
-
+    //속
     private final char symbol;
     private final BiFunction<Double, Double, Double> expression;
-
+    //생
     OperatorType(char symbol, BiFunction<Double, Double, Double> expression) {
         this.symbol = symbol;
         this.expression = expression;
     }
-
+    //기
     public double apply(double firstnum, double secondnum) {
         return this.expression.apply(firstnum, secondnum);
     }

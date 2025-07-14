@@ -3,13 +3,13 @@ package lv3;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
+//속,.? 물려받음
 public class MathCalculator extends Calculator {
-
+    //생
     public MathCalculator() {
         super(new ArrayList<>());
     }
-
+    //기
     public <T extends Number> double calculate(T firstnum, T secondnum, char operatorSymbol) {
         OperatorType operator = getOperatorType(operatorSymbol);
 

@@ -1,5 +1,5 @@
 package lv3;
-
+//속 CurrencyType
 public enum CurrencyType {
     // 각 통화와 USD 대비 환율
     USD("달러", 1.0),
@@ -9,18 +9,18 @@ public enum CurrencyType {
 
     private final String name;
     private final double rateToUsd;
-
+    //생
     CurrencyType(String name, double rateToUsd) {
         this.name = name;
         this.rateToUsd = rateToUsd;
     }
-
+    //기
     public String getName() {
         return name;
     }
 
 
-     //amount 변환할 금액, from시작 통화 타입, to바꿀 통화 타입, return 변환된 금액
+     //amount 변환할 금액, from 시작 통화 타입, to 바뀔 통화 타입, return 변환된 금액
     public static double convert(double amount, CurrencyType from, CurrencyType to) {
         double amountInUsd = amount / from.rateToUsd;
         return amountInUsd * to.rateToUsd;
